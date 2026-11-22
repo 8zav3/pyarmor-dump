@@ -167,6 +167,14 @@ pyarmor gen --obf-code 0 -O dist src/sample.py
 
 **PyArmor 7 is unvalidated in this build.** The signatures come from the 7.7.4 wheel (`entry_lines`, `make_super_bootstrap`, `protect_code.pt`) and the worker path is the same as 8/9, but no live 7.x runtime was available to confirm extraction.
 
+## Support & Contributing
+
+Need help with a protected file, found a bug, or want to contribute?
+
+- **Open an Issue**: [github.com/8zav3/pyarmor-dump/issues](https://github.com/8zav3/pyarmor-dump/issues)
+- **Open a Pull Request**: [github.com/8zav3/pyarmor-dump/pulls](https://github.com/8zav3/pyarmor-dump/pulls)
+- **Contact**: [![GitHub](https://img.shields.io/badge/GitHub-8zav3-181717?style=flat&logo=github&logoColor=white)](https://github.com/8zav3) [![Discord](https://img.shields.io/badge/Discord-Contact-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.com/users/1516402914267234382)
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
@@ -177,5 +185,5 @@ PyArmor is a commercial product by Dashingsoft. This project is not affiliated w
 
 <div align="center">
   <p><strong>pyarmor-dump</strong> · PyArmor runtime capture &amp; .pyc extractor</p>
-  <p><a href="doc/versions.md">Supported Versions</a> · <a href="doc/example.md">Example Output</a> · <a href="LICENSE">License</a></p>
+  <p><a href="doc/versions.md">Supported Versions</a> · <a href="doc/example.md">Example Output</a> · <a href="LICENSE">License</a> · <a href="https://github.com/8zav3">GitHub</a> · <a href="https://discord.com/users/1516402914267234382">Discord</a></p>
 </div>
