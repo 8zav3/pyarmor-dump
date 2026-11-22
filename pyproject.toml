@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyarmor-dump"
+version = "0.1.0"
+description = "Recover executable .pyc files from PyArmor-protected Python scripts"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "pyarmor-dump contributors" }]
+keywords = ["pyarmor", "bytecode", "pyc", "reverse-engineering", "python"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Disassemblers",
+]
+dependencies = []
+
+[project.optional-dependencies]
+decompile = ["xdis>=6.1"]
+dev = ["pytest>=7", "pyarmor>=8.5,<10"]
+
+[project.scripts]
+pyarmor-dump = "pyarmor_dump.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pyarmor_dump*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
